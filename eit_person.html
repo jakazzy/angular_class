@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-guide-concepts-1-production</title>
+  
+
+  <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+  
+
+  
+</head>
+<body >
+  <div ng-app ng-init="firstName; lastName; DOB; gender; birthyear = 0;">
+  <div>
+    First name: <input type="text"  ng-model="firstName">
+  </div>
+  <div>
+    Last name: <input type="text"  ng-model="lastName">
+  </div>
+  <div>
+    DOB: <input type="date"  ng-model="DOB">
+  </div>
+   <div>
+    birthyear: <input type="number"  ng-model="birthyear" placeholder = "year of birth">
+  </div>
+  <div>
+    Gender: <input type="text" ng-model="gender">
+  </div>
+  <div>
+    <b>Name:</b> {{firstName + " " + lastName}}
+  </div>
+  
+ <div>
+    <b>Age:</b> {{(birthyear > 0) ? 2018 - birthyear: "" }}
+  </div>
+  
+  <div>
+    <b>Gender:</b> {{gender}}
+  </div>
+</div>
+
+
+</body>
+</html>
